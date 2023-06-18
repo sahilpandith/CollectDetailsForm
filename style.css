@@ -1,0 +1,48 @@
+body {
+    margin:0px;
+}
+
+#root {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 1px 2px gainsboro;
+    padding: 20px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+form span{
+    grid-column: 2/3;
+    padding: 2px;
+    display: inline-block;
+    height: 20px;
+    color: red;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+form label{
+    padding-right: 5px;
+}
+
+form button {
+    width: max-content;
+    padding: 5px 10px;
+    border-radius: 9px;
+    border: none;
+    box-shadow: 0px 0px 3px 2px #2a4879;
+    background: #3b82f6;
+    color: white;
+    grid-column: 2/3;
+    justify-self: end;
+}
+
+input.error-active:invalid{
+    border: 1px solid red;
+}
+
